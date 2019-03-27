@@ -1,3 +1,4 @@
 # QM_Magazine
-利用组件实现的杂志小程序
-后台数据来自easymock
+A simple magazine miniapp
+created from many components which makes the project easy to manage and reuse
+got the fake data from easymock(Someone else wrote the backend API)
