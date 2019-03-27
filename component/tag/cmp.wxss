@@ -1,0 +1,6 @@
+.tag{
+  display: inline-block;
+  border: 2rpx solid black;
+  padding: 10rpx 20rpx;
+  font-size: 28rpx;
+}

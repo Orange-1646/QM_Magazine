@@ -1,0 +1,14 @@
+/* component/pureText/cmp.wxss */
+.container{
+  width: 640rpx;
+  padding: 10rpx 30rpx;
+}
+.title{
+  font-size: 48rpx;
+  margin-bottom: 10rpx;
+}
+.subtitle{
+  font-size: 30rpx;
+  color: #666;
+  letter-spacing: 2rpx;
+}

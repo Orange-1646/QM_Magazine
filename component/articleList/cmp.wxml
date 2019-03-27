@@ -1,0 +1,6 @@
+<view class="container">
+  <c-article wx:for="{{articleList}}" articleDetail="{{item}}" wx:key="{{item.artId}}" />
+  <c-loading wx:if="{{isLoading}}" class="loading"/>
+  <view class='finish' wx:if="{{finished}}">No more Data</view>
+  <view class='err' wx:if="{{fail}}">Disconnected from the Internet, please check your Internet environment</view>
+</view>

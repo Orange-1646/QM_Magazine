@@ -1,0 +1,20 @@
+/* component/imgText/cmp.wxss */
+.container{
+  width: 640rpx;
+  display: flex;
+  padding: 10rpx 30rpx;
+  justify-content: space-between;
+}
+.title{
+  font-size: 48rpx;
+  margin-bottom: 10rpx;
+}
+.sub-title{
+  font-size: 30rpx;
+  color: #666;
+  letter-spacing: 2rpx;
+}
+.image{
+  width: 160rpx;
+  height: 160rpx;
+}

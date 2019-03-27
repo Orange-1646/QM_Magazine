@@ -1,0 +1,3 @@
+<scroll-view class='container' scroll-x="true" scroll-into-view="{{activeId}}" scroll-with-animation="true">
+  <text bind:tap="select" data-index="{{index}}" class='title {{index === focus ? "active" : ""}}' wx:for="{{title}}" wx:key="{{index}}" id="{{'magazine' + index}}">{{item}}</text>
+</scroll-view>

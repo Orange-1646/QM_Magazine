@@ -1,0 +1,14 @@
+/* component/tagList/cmp.wxss */
+.container{
+  padding: 25rpx;
+  font-weight: bold;
+}
+.first{
+  background: #000;
+  color: #fff;
+}
+.tag{
+  display: inline-block;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}

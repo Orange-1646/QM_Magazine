@@ -1,0 +1,10 @@
+/* component/imgBtn/cmp.wxss */
+.container{
+  padding: 0 !important;
+  border: none !important;
+}
+.container image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 15rpx;
+}

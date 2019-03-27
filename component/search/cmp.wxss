@@ -1,0 +1,20 @@
+/* component/search/cmp.wxss */
+.container{
+  display: flex;
+  width: 700rpx;
+  justify-content: space-between;
+  margin: 20rpx auto;
+  align-items: center;
+}
+.search-content{
+  display: inline-block;
+  width: 600rpx;
+  height: 80rpx; 
+  padding-left: 20rpx;
+  background: #f3f3f3;
+  font-size: 28rpx;
+}
+.search-button{
+  font-size: 28rpx;
+  display: inline-block;
+}

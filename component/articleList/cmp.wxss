@@ -1,0 +1,19 @@
+/* component/articleList/cmp.wxss */
+.container{
+  width: 750rpx;
+  height: 100%;
+  padding-top: 20rpx;
+  padding-bottom: 60rpx;
+  background: #eee;
+}
+.finish, .err{
+  margin-top: 30rpx auto;
+  color: #aaa;
+  font-size: 40rpx;
+  text-align: center;
+}
+.loading{
+  display: block;
+  margin-top: 30rpx;
+  margin-left: calc(50% - 30rpx);
+}

@@ -1,0 +1,14 @@
+  <view class='container'>
+  <c-nav class="nav" catch:jump="jump" />
+  <c-recommend recommendInfo="{{recommendInfo}}" index="{{index}}" class="recommend" />
+  <c-tagList tagArr="{{typeList}}">
+    <c-add wx:if="{{!index}}" slot="before" />
+    <text wx:if="{{!index}}" class='to-catalog' slot="after" catch:tap="onCatalog">...</text>
+  </c-tagList>
+  <c-articleList articleList="{{articleList}}"
+                 getMore="{{getMore}}"
+                 magazineId="{{index}}" />
+  <view class='loading-container' hidden='{{!loading}}'>
+    <c-loading class="loading" />
+  </view>
+  </view>

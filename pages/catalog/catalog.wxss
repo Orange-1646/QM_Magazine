@@ -1,0 +1,39 @@
+/* pages/catalog/catalog.wxss */
+.container{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tagInfo{
+  width: 700rpx;
+}
+.tagTitle{
+  margin-bottom: 20rpx;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.eachContent{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70rpx;
+  margin-bottom: 30rpx;
+  font-size: 34rpx;
+}
+.my-sub{
+  width: 700rpx;
+}
+.sub-control{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 0 40rpx;
+}
+.my-magazine{
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.manage-magazine{
+  font-size: 34rpx;
+}

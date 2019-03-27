@@ -1,0 +1,24 @@
+<view class="container">
+  <c-search val="{{val}}" />
+  <view class='my-sub'>
+    <view class='sub-control'>
+      <view class='my-magazine'>我的杂志</view>
+      <view class='manage-magazine'>管理杂志</view>
+    </view>
+    <c-tagList tagArr="{{subArr}}">
+      <c-add slot="before" />
+    </c-tagList>
+  </view>
+  <view class='tagInfo'>
+    <view class='tag' wx:for="{{tagInfoList}}" wx:key="{{item.title}}">
+      <view class='tagTitle'>{{item.title}}></view>
+      <view class='tagContent'>
+        <view class='eachContent' wx:for="{{item.tagList}}" wx:key="{{item.tag}}">
+          <text class='tagItem'># {{item.tag}}</text>
+          <c-subscribe bindsubchange="onSubChange" tag="{{item.tag}}" tagId="{{item.tagId}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>

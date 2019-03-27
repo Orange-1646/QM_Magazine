@@ -1,0 +1,4 @@
+<view class="container" catch:tap="toggleLike">
+  <image hidden="{{liked}}" class='image' src='/image/icon/Icon_circle.png'></image>
+  <image hidden="{{!liked}}" class='image' src='/image/icon/Icon_circle_fill.png'></image>
+</view>

@@ -1,0 +1,8 @@
+<view class="container">
+  <view class='big-title'>{{index == 0 ? date : nav[index]}}</view>
+  <view class='title'>{{recommendInfo.title}}</view>
+  <image class='image' wx:if="{{recommendInfo.imgSrc}}" src='{{recommendInfo.imgSrc}}'></image>
+  <view class='skeleton' wx:if="{{!recommendInfo.imgSrc}}">
+    <view class='loader'></view>
+  </view>
+</view>

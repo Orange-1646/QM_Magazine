@@ -1,0 +1,35 @@
+/* component/article/cmp.wxss */
+.container{
+  width: 720rpx;
+  margin: 20rpx auto;
+  background: #fff;
+}
+.mark-container{
+  padding: 10rpx 20rpx;
+}
+.avatar{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.mark-info{
+  display: inline-block;
+  font-size: 28rpx;
+  color: #666;
+}
+.control{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  margin-top: 10rpx;
+}
+.more-options{
+  display: flex;
+}
+.box{
+  display: block;
+  margin-left: 25rpx;
+}

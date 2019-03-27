@@ -1,0 +1,27 @@
+<view class="container">
+  <view class='user-container'>
+    <view class='user-info'>
+
+      <view class='user-name'>{{userInfo.nickName}}</view>
+
+      <view class='user-avatar'>
+        <image wx:if="{{authorized}}" class='avatar' src='{{userInfo.avatarUrl}}'></image>
+        <!-- <button class='confirmation' wx:else open-type='getUserInfo' bindgetuserinfo='onAuthorized'>
+          <image src='/image/1.png'></image>
+        </button> -->
+        <c-imgBtn open-type="getUserInfo" wx:else bindgetuserinfo="onAuthorized">
+          <image slot="img" src="/image/1.png"></image>
+        </c-imgBtn>
+      </view>
+
+    </view>
+
+    <view class='share'>
+      <c-imgBtn open-type="share">
+        <image slot="img" src='/image/icon/Icon_relay.png'></image>
+      </c-imgBtn>
+    </view>
+  </view>
+  <c-articleList wx:if="{{authorized}}" articleList="{{articleList}}" />
+</view>
+<c-imgBtn />

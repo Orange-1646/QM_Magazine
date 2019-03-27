@@ -1,0 +1,6 @@
+<view class="container">
+  <view class='image-container'>
+    <image class='image' mode='widthFix' src="{{imagesrc}}"></image>
+  </view>
+  <view class='text'>{{title}}</view>
+</view>

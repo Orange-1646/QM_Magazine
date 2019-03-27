@@ -1,0 +1,50 @@
+<view class="container">
+  <view class='mark-container'>
+    <image class='avatar' src='{{articleDetail.mark.avatar}}'></image>
+    <view class='mark-info'>
+      <text>{{articleDetail.mark.people}}</text>
+      <text>等</text>
+      <text>{{articleDetail.mark.count}}</text>
+      <text>人马克了</text>
+    </view>
+  </view>
+  <view class='main-content'>
+    <c-bigImg wx:if="{{articleDetail.type==0}}"
+              imagesrc="{{articleDetail.imgArray[0]}}" 
+              title="{{articleDetail.mainTitle}}" />
+    <c-imgText wx:elif="{{articleDetail.type==2}}"
+               title="{{articleDetail.mainTitle}}" 
+               subtitle="{{articleDetail.subHead}}" 
+               imagesrc="{{articleDetail.imgArray[0]}}" />
+    <c-pureText wx:elif="{{articleDetail.type==4}}" 
+                title="{{articleDetail.mainTitle}}" 
+                subtitle="{{articleDetail.subHead}}" />
+    <c-nineImage wx:elif="{{articleDetail.type==1}}" 
+                 imageArr="{{articleDetail.imgArray}}" 
+                 title="{{articleDetail.mainTitle}}" />
+    <c-video wx:else 
+             videoSrc="{{articleDetail.video.src}}" 
+             posterSrc="{{articleDetail.video.poster}}"
+             duration="{{articleDetail.video.duration}}"
+             title="{{articleDetail.mainTitle}}"
+             videoId="{{articleDetail.videoId}}"
+                     />
+  </view>
+  <view class='control'>
+    <view class='tag'>
+      <c-tag tag="{{articleDetail.tag}}" tagId="{{articleDetail.tagId}}" />
+    </view>
+    <view class='more-options'>
+      <c-more class="box" tag="{{articleDetail.tag}}" />
+      <c-like class="box" liked="{{liked}}" bindlike="onlike" />
+      <c-imgBtn class="box" open-type="share">
+        <image slot="img" src='/image/icon/Icon_relay.png'></image>
+      </c-imgBtn>
+    </view>
+  </view>
+</view>
+<!-- 1 九图
+2 图文
+3 视频
+4 纯文字
+0 大图 -->

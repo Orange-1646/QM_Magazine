@@ -1,0 +1,9 @@
+<view class="container">
+  <view class='image-container'>
+    <image catch:tap="tapToPreview" data-index="{{index}}" wx:for="{{imageArr}}" wx:key="index" wx:if="{{index < 9}}" src="{{item}}" class="image"></image>
+    <view class='counter' wx:if="{{imageArr.length > 8}}">+{{imageArr.length - 9}}</view>
+  </view>
+  <view class='text-container'>
+    <text class='title'>{{title}}</text>
+  </view>
+</view>

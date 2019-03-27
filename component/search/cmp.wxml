@@ -1,0 +1,4 @@
+<view class="container">
+  <input class='search-content' type='text' placeholder='青芒' bindconfirm='onEnterSearch' bindblur='onBlur' value="{{val}}"></input>
+  <text class='search-button' catch:tap="onButtonSearch">搜索</text>
+</view>

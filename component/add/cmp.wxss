@@ -1,0 +1,10 @@
+/* component/add/cmp.wxss */
+.container{
+  display: inline-block;
+  border: 2rpx solid black;
+  padding: 10rpx 20rpx;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+  color: #fff;
+  background: #000;
+}

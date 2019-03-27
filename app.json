@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/catalog/catalog",
+    "pages/mark/mark",
+    "pages/type/type",
+    "pages/search/search"
+  ],
+  "tabBar": {
+    "color": "#999999",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "iconPath": "image/catalog0.png",
+        "selectedIconPath": "image/catalog1.png",
+        "pagePath": "pages/catalog/catalog",
+        "text": "catalog"
+      },
+      {
+        "iconPath": "image/index0.png",
+        "selectedIconPath": "image/index1.png",
+        "pagePath": "pages/index/index",
+        "text": "index"
+      },
+      {
+        "iconPath": "image/mark0.png",
+        "selectedIconPath": "image/mark1.png",
+        "pagePath": "pages/mark/mark",
+        "text": "mark"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

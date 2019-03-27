@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "c-article" : "../article/cmp",
+    "c-loading" : "../loading/cmp",
+    "c-recommend": "../recommend/cmp"
+  }
+}

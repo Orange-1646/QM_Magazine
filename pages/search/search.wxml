@@ -1,0 +1,14 @@
+<view class='container'>
+  <c-search val="{{val}}" />
+
+  <view class='recommend-container'>
+    <view class='tag'>#{{recommend.tag}}></view>
+    <view class='recommend-list' wx:for="{{recommend.recommend}}" wx:key="{{item.artId}}">{{item}}</view>
+  </view>
+
+  <c-articleList articleList="{{articleList}}" getMore="{{getMore}}" searchText="{{val}}" />
+
+  <view class='loading-container' hidden='{{!loading}}'>
+    <c-loading class="loading" />
+  </view>
+</view>

@@ -1,0 +1,1 @@
+<view class="tag" catch:tap="tagTap">{{tag}}</view>
